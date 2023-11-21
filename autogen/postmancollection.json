@@ -1,0 +1,94 @@
+{
+  "item": [
+    {
+      "id": "d1f6cc7f-9a08-49ae-8ca8-b5b1dda611ef",
+      "name": "/api/songs",
+      "request": {
+        "description": {
+          "content": "Gets a list of songs",
+          "type": "text/plain"
+        },
+        "url": {
+          "port": "{{port}}",
+          "path": [
+            "api",
+            "songs"
+          ],
+          "host": [
+            "{{server}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "body": {
+          "mode": "raw",
+          "raw": {
+            "type": "",
+            "title": "",
+            "content": "\ncurl -X {server}/api/song"
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "5aa79c1c-a32f-42c7-b2c2-42df0ac9a2dc",
+          "name": "http200",
+          "status": "OK",
+          "code": 200,
+          "header": [],
+          "cookie": []
+        },
+        {
+          "id": "9018752b-f203-4ef0-900b-5b1859de9039",
+          "name": "http401",
+          "status": "Unauthorized",
+          "code": 401,
+          "header": [],
+          "cookie": []
+        },
+        {
+          "id": "641aae49-942b-4574-a082-3ac46a5e7ca9",
+          "name": "http403",
+          "status": "Forbidden",
+          "code": 403,
+          "header": [],
+          "cookie": []
+        },
+        {
+          "id": "08f8b57d-8f13-4cfd-af95-d988049753d4",
+          "name": "http500",
+          "status": "Internal Server Error",
+          "code": 500,
+          "header": [],
+          "cookie": []
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "localhost",
+      "key": "server"
+    },
+    {
+      "type": "number",
+      "value": 3000,
+      "key": "port"
+    }
+  ],
+  "info": {
+    "_postman_id": "15225ae7-3991-453b-8579-fa4d1267e135",
+    "name": "Song APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "autogen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ignore postmancollection.json index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "docblock": "^0.4.5",
+    "postman-collection": "^4.3.0"
+  }
+}
